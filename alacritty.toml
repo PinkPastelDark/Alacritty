@@ -1,0 +1,83 @@
+# Alacritty configuration file (TOML format)
+
+[window]
+opacity = 1
+blur = false
+
+[font]
+normal = { family = "Hack Nerd Font", style = "Regular" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+italic = { family = "Hack Nerd Font", style = "Italic" }
+size = 12.0
+
+[colors]
+# Primary colors (foreground and background)
+[colors.primary]
+foreground = "#ebe0e1"
+background = "#1f1a1b"
+
+# Cursor colors
+[colors.cursor]
+text = "CellBackground"
+cursor = "#ffb0cb"
+
+# Selection colors
+[colors.selection]
+text = "CellBackground"
+background = "#ffb0cb"
+
+# Search colors (matches and focused matches)
+[colors.search]
+matches = { foreground = "#1f1a1b", background = "#ffb0cb" }
+focused_match = { foreground = "#1f1a1b", background = "#ffb0cb" }
+
+# Hints (for vi-style hints)
+[colors.hints]
+start = { foreground = "#ebe0e1", background = "#ffb0cb" }
+end = { foreground = "#ebe0e1", background = "#ffb0cb" }
+
+# Line indicator (search/vi mode history)
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+# Footer bar (used for regex input, hyperlinks, etc.)
+[colors.footer_bar]
+foreground = "#ebe0e1"
+background = "#5a3f47"
+
+# Normal colors (standard colors for terminal output)
+[colors.normal]
+black = "#5a3f47"
+red = "#ffb4a9"
+green = "#8ff0a4"
+yellow = "#f9f06b"
+blue = "#99c1f1"
+magenta = "#dc8add"
+cyan = "#62a0ea"
+white = "#ebe0e1"
+
+# Bright colors (bright variants for terminal output)
+[colors.bright]
+black = "#77767b"
+red = "#f66151"
+green = "#57e389"
+yellow = "#f8e45c"
+blue = "#3584e4"
+magenta = "#c061cb"
+cyan = "#62a0ea"
+white = "#ebe0e1"
+
+# Dim colors (calculated automatically if not set)
+[colors.dim]
+black = "#77767b"
+red = "#ed333b"
+green = "#33d17a"
+yellow = "#f5c211"
+blue = "#1c71d8"
+magenta = "#813d9c"
+cyan = "#62a0ea"
+white = "#ebe0e1"
+
+[env] # SSH compatibility, remove if not necessary
+TERM = "xterm-256color"
